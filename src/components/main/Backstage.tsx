@@ -2,6 +2,7 @@ import React from "react";
 import Container from "../Container";
 import MainLink from "../shared/MainLink";
 import SectionTitle from "../shared/SectionTitle";
+import SwiperBackstage from "../shared/SwiperBackstage";
 
 const Backstage: React.FC = () => {
   return (
@@ -12,13 +13,8 @@ const Backstage: React.FC = () => {
           <MainLink href="/backstage" text="full" />
         </div>
         <div className="mb-24">
-          <img
-            src="/backstage/image1.png"
-            alt="Photo"
-            className="object-cover"
-          />
+          <SwiperBackstage />
         </div>
-        <p className="text-center text-xl">Lorem, ipsum dolor.</p>
       </Container>
     </section>
   );
