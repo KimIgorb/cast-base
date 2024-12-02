@@ -6,7 +6,7 @@ const Faces:React.FC = () => {
   return (
     <section className="pt-24" id="faces">
       <Container>
-        <SectionTitle text="Faces" className="font-mainTitle"/>
+        <SectionTitle text="Faces" isThin/>
         <div className="mt-24 flex gap-16 min-h-[2000px]">
           <div className="flex flex-col gap-14 basis-3/5">
             <div className="flex items-end gap-10">

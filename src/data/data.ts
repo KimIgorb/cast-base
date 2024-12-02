@@ -88,16 +88,15 @@ export const backstageImages = [
   { id: 1, src: '/gallery-backstage/image1.png', styles: 'mb-16' },
   { id: 2, src: '/gallery-backstage/image2.png', styles: 'mb-[28.875rem] self-end' },
   { id: 3, src: '/gallery-backstage/image3.png', styles: 'mb-52 self-end' },
-  { id: 4, src: '/faces/image2.png', styles: 'mb-[37.938rem] self-end' },
-  { id: 5, src: '/faces/image1.png', styles: 'mb-14' },
-  { id: 6, src: '/faces/image2.png', styles: 'self-end' },
+  { id: 4, src: '/gallery-backstage/image4.png', styles: 'mb-[37.938rem] self-end' },
+  { id: 5, src: '/gallery-backstage/image5.png', styles: 'self-end' },
 ]
 
 export const backstageImages2 = [
-  { id: 1, src: '/gallery-backstage/image4.png', styles: 'mb-[27.625rem] pt-60' },
-  { id: 2, src: '/gallery-backstage/image5.png', styles: 'mb-[19.313rem]' },
-  { id: 3, src: '/faces/image3.png', styles: 'mb-[27.063rem]' },
-  { id: 4, src: '/faces/image4.png', styles: 'mb-[19.313rem]' },
-  { id: 5, src: '/faces/image3.png', styles: 'mb-[27.063rem]' },
-  { id: 6, src: '/faces/image4.png', styles: '' },
+  { id: 1, src: '/gallery-backstage/image6.png', styles: 'mb-[27.625rem] pt-60' },
+  { id: 3, src: '/gallery-backstage/image7.png', styles: 'mb-[27.063rem]' },
+  { id: 2, src: '/gallery-backstage/image8.png', styles: 'mb-[19.313rem]' },
+  { id: 4, src: '/gallery-backstage/image9.png', styles: 'mb-[19.313rem]' },
+  { id: 5, src: '/gallery-backstage/image10.png', styles: '' },
+
 ]

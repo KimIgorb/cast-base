@@ -10,7 +10,7 @@ const Works: React.FC = () => {
     <section id="works" className="pt-24">
       <Container>
         <div className="text-center mb-24">
-          <SectionTitle text="WORKS" className="font-mainTitle" />
+          <SectionTitle text="WORKS" isThin />
         </div>
         <div className="mb-16">
           <div className="flex justify-between items-center mb-2">

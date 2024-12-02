@@ -8,7 +8,7 @@ const Backstage: React.FC = () => {
     <section className="py-24" id="backstage">
       <Container>
         <div className="flex justify-between items-end mb-24">
-          <SectionTitle text="Backstage" className="font-mainTitle" />
+          <SectionTitle text="Backstage" isThin />
           <MainLink href="/backstage" text="full" />
         </div>
         <div className="mb-24">
