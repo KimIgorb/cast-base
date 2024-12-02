@@ -6,6 +6,7 @@ import { faces } from "../data/faces";
 import Text from "../components/shared/Text";
 import ProfileCard from "../components/faces/ProfileCard";
 import Video from "../components/shared/Video";
+import BackLink from "../components/shared/BackLink";
 
 export const Profile: React.FC = () => {
   const { id } = useParams();
@@ -34,7 +35,9 @@ export const Profile: React.FC = () => {
   return (
     <main className="bg-stone-950">
       <section className="py-24">
-        <Container>
+        <Container className="relative">
+          <BackLink to="/faces" />
+
           <SectionTitle
             text={face.name}
             className="text-white text-9xl mb-3.5"
