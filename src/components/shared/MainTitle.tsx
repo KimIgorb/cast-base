@@ -12,7 +12,7 @@ const MainTitle: React.FC = () => {
   React.useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImage((prev) => (prev + 1) % backgroundImages.length);
-    }, 2000);
+    }, 500);
 
     return () => clearInterval(interval);
   }, []);
