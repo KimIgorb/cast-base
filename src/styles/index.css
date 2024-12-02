@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* html {
+  scroll-behavior: smooth;
+} */
+
+
+/* .text-with-bg {
+  background-size: cover;
+  background-position: center;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  height: 350px;
+  width: auto;
+} */
