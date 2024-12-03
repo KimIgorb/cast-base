@@ -5,10 +5,10 @@ import NavLinks from "./shared/NavLinks";
 import throttle from "lodash.throttle";
 
 const navLinks = [
-  { id: 1, value: "About", href: "#about", to: "/about" },
-  { id: 2, value: "Works", href: "#works", to: "/clips" },
-  { id: 3, value: "Faces", href: "#faces", to: "/faces" },
-  { id: 4, value: "Backstage", href: "#backstage", to: "/backstage" },
+  { id: 1, value: "About", href: "/about" },
+  { id: 2, value: "Works", href: "/clips" },
+  { id: 3, value: "Faces", href: "/faces" },
+  { id: 4, value: "Backstage", href: "/backstage" },
 ];
 
 const Header: React.FC = () => {
@@ -57,7 +57,6 @@ const Header: React.FC = () => {
                   key={item.id}
                   value={item.value}
                   href={item.href}
-                  to={item.to}
                 />
               ))}
             </ul>

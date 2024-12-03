@@ -28,7 +28,6 @@ const Hero: React.FC = () => {
               <Text text={aboutText} className="max-w-2xl" />
               <MainLink href="/about" text="full" className="block" isPrimary />
             </div>
-
             <div className="flex flex-col gap-36 items-center">
               <div className="flex items-end gap-1">
                 <img
