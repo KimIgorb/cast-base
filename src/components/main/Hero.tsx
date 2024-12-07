@@ -29,7 +29,7 @@ const Hero: React.FC = () => {
               <MainLink href="/about" text="full" className="block" isPrimary />
             </div>
             <div className="flex flex-col gap-36 items-center">
-              <div className="flex items-end gap-1">
+              <div className="flex items-end">
                 <img
                   className="object-contain 2xl:max-w-[21.938rem] lg:max-w-60 w-full"
                   src="/actors/hero-img1.png"
