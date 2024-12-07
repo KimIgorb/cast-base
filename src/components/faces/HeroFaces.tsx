@@ -18,7 +18,7 @@ const nationality = [
   {
     id: 3,
     styles: "w-80 h-96 bg-zinc-500",
-    src: "/faces/test.jpg",
+    src: "/faces/mix.jpg",
     value: "Mix",
   },
 ];

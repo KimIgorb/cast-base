@@ -8,9 +8,9 @@ export const Backstage: React.FC = () => {
     <main className="bg-bg">
       <section className="pt-48 pb-24">
         <Container>
-          <div className="flex gap-[51px]">
+          <div className="flex gap-12">
             <BackstageGallery arr={backstageImages} />
-            <BackstageGallery arr={backstageImages2} />
+            <BackstageGallery arr={backstageImages2} className="pt-32"/>
           </div>
         </Container>
       </section>

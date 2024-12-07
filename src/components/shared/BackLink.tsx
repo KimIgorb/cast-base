@@ -19,12 +19,12 @@ const BackLink: React.FC<Props> = ({ to }) => {
         <path
           d="M3.50586 9.50049L53.5058 9.54002"
           stroke="white"
-          stroke-width="3"
+          strokeWidth="3"
         />
         <path
           d="M10.5 17.0059L3.00593 9.49993L10.5119 2.00586"
           stroke="white"
-          stroke-width="3"
+          strokeWidth="3"
         />
       </svg>
     </Link>

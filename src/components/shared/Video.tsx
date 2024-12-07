@@ -33,7 +33,7 @@ const Video: React.FC<Props> = ({ src, poster, className, isView }) => {
           controls
           poster={poster}
           src={src}
-          preload="metadata"
+          preload="auto"
           className={`object-cover ${className}`}
         />
       ) : (
@@ -43,7 +43,7 @@ const Video: React.FC<Props> = ({ src, poster, className, isView }) => {
             controls={isPlaying ? true : false}
             poster={poster}
             src={src}
-            preload="metadata"
+            preload="none"
             className={`object-cover ${className}`}
           />
           {!isPlaying && (

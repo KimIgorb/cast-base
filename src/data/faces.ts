@@ -39,7 +39,7 @@ export const faces = [
         className: "max-w-[43.688rem] min-h-[63.563rem] object-contain",
       },
     ],
-    video: "/exclusive/Zulfiya/vid.mov",
+    video: "/exclusive/Zulfiya/vid.mp4",
     poster: "/exclusive/Zulfiya/poster.png",
   },
   {
@@ -152,7 +152,7 @@ export const faces = [
         className: "max-w-[43.688rem] min-h-[63.563rem] object-contain",
       },
     ],
-    video: "/exclusive/Madina/video.mov",
+    video: "/exclusive/Madina/video.mp4",
     poster: "/exclusive/Madina/poster.png",
   },
 ];

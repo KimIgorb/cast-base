@@ -17,15 +17,15 @@ const Hero: React.FC = () => {
       </p>
       <Container className="relative">
         <MainTitle />
-        <div className="flex 2xl:justify-end md:justify-start relative">
-          <div className="flex max-w-[86%] w-full justify-between items-end">
+        <div className="flex 2xl:justify-end lg:justify-start relative">
+          <div className="flex 2xl:max-w-[86%] lg:max-w-full w-full 2xl:justify-between lg:justify-evenly items-end">
             <div className="space-y-5">
               <img
                 className="object-contain 2xl:max-w-[30rem] lg:max-w-80 w-full mb-36"
                 src="/actors/hero-img2.png"
                 alt="ActorPhoto2"
               />
-              <Text text={aboutText} className="max-w-2xl" />
+              <Text text={aboutText} className="2xl:max-w-2xl lg:max-w-lg" />
               <MainLink href="/about" text="full" className="block" isPrimary />
             </div>
             <div className="flex flex-col gap-36 items-center">
@@ -37,11 +37,11 @@ const Hero: React.FC = () => {
                 />
                 <Text
                   text={subtitle}
-                  className="text-right max-w-xs pb-20 w-full"
+                  className="text-right 2xl:max-w-52 lg:max-w-52 pb-20 w-full"
                 />
               </div>
               <img
-                className="object-contain 2xl:max-w-[31.063rem] lg:max-w-96 w-full"
+                className="object-contain 2xl:max-w-[31.063rem] lg:max-w-80 w-full"
                 src="/actors/hero-img3.png"
                 alt="ActorPhoto3"
               />

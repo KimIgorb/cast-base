@@ -28,7 +28,7 @@ const SwiperBackstage: React.FC = () => {
           <SwiperSlide key={image}>
             <img
               src={image}
-              alt=""
+              alt="Backstage Photo"
               className="w-full object-contain h-[897px]"
             />
           </SwiperSlide>
@@ -43,8 +43,8 @@ const SwiperBackstage: React.FC = () => {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <path d="M3.5 9.5L53.5 9.5" stroke="#7A2E2F" stroke-width="3" />
-            <path d="M10.5 2L3 9.5L10.5 17" stroke="#7A2E2F" stroke-width="3" />
+            <path d="M3.5 9.5L53.5 9.5" stroke="#7A2E2F" strokeWidth="3" />
+            <path d="M10.5 2L3 9.5L10.5 17" stroke="#7A2E2F" strokeWidth="3" />
           </svg>
         </button>
         <div className="custom-pagination flex space-x-2"></div>
@@ -59,9 +59,9 @@ const SwiperBackstage: React.FC = () => {
             <path
               d="M50 9.5L3.8743e-07 9.5"
               stroke="#7A2E2F"
-              stroke-width="3"
+              strokeWidth="3"
             />
-            <path d="M43 2L50.5 9.5L43 17" stroke="#7A2E2F" stroke-width="3" />
+            <path d="M43 2L50.5 9.5L43 17" stroke="#7A2E2F" strokeWidth="3" />
           </svg>
         </button>
       </div>

@@ -1,14 +1,15 @@
 import React from "react";
 
 interface Props {
-  arr: { id: number; src: string; styles: string }[];
+  arr: { id: number; src: string;}[];
+  className?: string
 }
 
-const BackstageGallery: React.FC<Props> = ({ arr }) => {
+const BackstageGallery: React.FC<Props> = ({ arr, className }) => {
   return (
-    <div className="flex flex-col">
+    <div className={`flex flex-col gap-12 ${className}`}>
       {arr.map((image) => (
-        <div key={image.id} className={`${image.styles}`}>
+        <div key={image.id}>
           <img src={image.src} alt="Photo" />
         </div>
       ))}
