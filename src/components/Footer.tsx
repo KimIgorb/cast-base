@@ -11,7 +11,7 @@ const Footer:React.FC = () => {
             <div key={el.id}>
               <div className="flex gap-6 items-center mb-6">
                 <img src={el.image} alt={el.alt} />
-                <span className="font-contacts font-semibold text-3xl text-contacts">
+                <span className="font-contacts font-semibold text-3xl">
                   {el.text}
                 </span>
               </div>
@@ -19,10 +19,10 @@ const Footer:React.FC = () => {
                 <a
                   href={item.href}
                   key={item.id}
-                  className="text-contacts font-contacts block font-semibold text-xl leading-7 relative group w-fit"
+                  className="font-contacts block font-semibold text-xl leading-7 relative group w-fit"
                 >
                   {item.text}
-                  <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-contacts transition-all duration-500 group-hover:w-full" />
+                  <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all duration-500 group-hover:w-full" />
                 </a>
               ))}
             </div>

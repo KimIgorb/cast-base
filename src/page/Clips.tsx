@@ -2,7 +2,7 @@ import React from "react";
 import { musicVideo, advertisingVideo, tvShowVideo } from "../data/data";
 import SectionTitle from "../components/shared/SectionTitle";
 import Container from "../components/Container";
-import Video from "../components/shared/Video";
+import { Link } from "react-router-dom";
 
 export const Clips: React.FC = () => {
   const videos = [...musicVideo, ...advertisingVideo, ...tvShowVideo];
@@ -16,7 +16,13 @@ export const Clips: React.FC = () => {
           </div>
           <div className="py-24 grid gap-6 grid-cols-3">
             {videos.map((item) => (
-              <Video key={item.id} src={item.src} poster={item.poster} className="h-[21.875rem]"/>
+              <Link
+                key={item.id}
+                to={`/clips/${item.id}`}
+                className="cursor-pointer hover:-translate-y-1 duration-200"
+              >
+                <img src={item.poster} alt="Video Poster" />
+              </Link>
             ))}
           </div>
         </Container>

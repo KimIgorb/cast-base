@@ -4,8 +4,14 @@ const backgroundImages = [
   "/titleBg/image1.jpg",
   "/titleBg/image2.jpg",
   "/titleBg/image3.jpg",
-  "/titleBg/image4.jpg",
 ];
+
+const backgroundImages1 = [
+  "/titleBg/image3.jpg",
+  "/titleBg/image2.jpg",
+  "/titleBg/image1.jpg",
+];
+
 
 const MainTitle: React.FC = () => {
   const [currentImage, setCurrentImage] = React.useState(0);
@@ -24,7 +30,7 @@ const MainTitle: React.FC = () => {
         className="lg:left-0 lg:top-2 font-title absolute 2xl:left-4 2xl:top-6 z-10 text-[17.625rem] bg-cover bg-clip-text text-transparent leading-[272px]"
         style={{
           backgroundImage: `url(${backgroundImages[currentImage]})`,
-          backgroundPosition: "center center"
+          backgroundPosition: "center 30%"
         }}
       >
         CAST
@@ -32,8 +38,8 @@ const MainTitle: React.FC = () => {
       <p
         className="lg:right-52 lg:top-60 leading-[272px] font-title absolute 2xl:top-96 2xl:right-0 z-10 text-[17.625rem] bg-cover bg-clip-text text-transparent"
         style={{
-          backgroundImage: `url(${backgroundImages[currentImage]})`,
-          backgroundPosition: "center center"
+          backgroundImage: `url(${backgroundImages1[currentImage]})`,
+          backgroundPosition: "center 30%"
         }}
       >
         BASE

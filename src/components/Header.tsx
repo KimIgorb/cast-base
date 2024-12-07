@@ -29,19 +29,21 @@ const Header: React.FC = () => {
   const location = useLocation();
 
   const isProfilePage = /^\/faces\/\d+$/.test(location.pathname);
+  const isClipViewPage = /^\/clips\/\d+$/.test(location.pathname);
 
   if (isProfilePage) {
     return null;
   }
 
+  const isHomeOrClipView = location.pathname === "/" || isClipViewPage;
+
   const headerStyles = `${
     isScrolled
       ? "shadow-md border-transparent border-0"
       : "border-b-2 border-b-primary"
-  } ${location.pathname === "/" ? "bg-secondary" : "bg-bg"}`;
+  } ${isHomeOrClipView ? "bg-secondary" : "bg-bg"}`;
 
-  const logoStyles =
-    location.pathname === "/" ? "text-primary" : "text-secondary";
+  const logoStyles = isHomeOrClipView ? "text-primary" : "text-secondary";
 
   return (
     <header className={`fixed top-0 left-0 w-full py-7 z-50 ${headerStyles}`}>
@@ -53,11 +55,7 @@ const Header: React.FC = () => {
           <nav>
             <ul className="flex gap-16 items-center">
               {navLinks.map((item) => (
-                <NavLinks
-                  key={item.id}
-                  value={item.value}
-                  href={item.href}
-                />
+                <NavLinks key={item.id} value={item.value} href={item.href} />
               ))}
             </ul>
           </nav>

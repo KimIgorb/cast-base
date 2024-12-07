@@ -6,7 +6,7 @@ import SwiperBackstage from "../shared/SwiperBackstage";
 
 const Backstage: React.FC = () => {
   return (
-    <section className="py-24" id="backstage">
+    <section className="py-24">
       <Container>
         <div className="flex justify-between items-end mb-24">
           <SectionTitle text="Backstage" isThin />

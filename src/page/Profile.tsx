@@ -46,8 +46,8 @@ export const Profile: React.FC = () => {
             <div className="space-y-9">
               <ProfileCard
                 age={face.age}
-                heigh={face.heigh}
-                sizes={face.sizes}
+                height={face.height}
+                weight={face.weight}
                 experience={face.experience}
               />
               {leftPhotos.map((photo) => (

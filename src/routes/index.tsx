@@ -1,10 +1,19 @@
-import { Home, About, Backstage, Clips, Faces, Profile } from "../page";
+import {
+  Home,
+  About,
+  Backstage,
+  Clips,
+  Faces,
+  Profile,
+  ClipView,
+} from "../page";
 import { RouteObject } from "react-router-dom";
 
 const routes: RouteObject[] = [
   { path: "/", element: <Home /> },
   { path: "/about", element: <About /> },
   { path: "/clips", element: <Clips /> },
+  { path: "/clips/:id", element: <ClipView /> },
   { path: "/backstage", element: <Backstage /> },
   { path: "/faces", element: <Faces /> },
   { path: "/faces/:id", element: <Profile /> },

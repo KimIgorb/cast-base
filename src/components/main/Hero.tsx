@@ -11,7 +11,7 @@ const subtitle = "Casting agency from Uzbekistan";
 
 const Hero: React.FC = () => {
   return (
-    <section id="about" className="relative bg-secondary pt-28 pb-14">
+    <section className="relative bg-secondary pt-28 pb-14">
       <p className="absolute uppercase z-10 text-3xl tracking-widest top-[35rem] right-[-350px] rotate-90 font-bold">
         Your idea our faces
       </p>

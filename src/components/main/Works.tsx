@@ -1,55 +1,58 @@
 import React from "react";
 import Container from "../Container";
 import SectionTitle from "../shared/SectionTitle";
-import Video from "../shared/Video";
 import MainLink from "../shared/MainLink";
 import { musicVideo, advertisingVideo, tvShowVideo } from "../../data/data";
+import { Link } from "react-router-dom";
 
 const Works: React.FC = () => {
   return (
-    <section id="works" className="pt-24">
-      <Container>
-        <div className="text-center mb-24">
-          <SectionTitle text="WORKS" isThin />
-        </div>
-        <div className="mb-16">
-          <div className="flex justify-between items-center mb-2">
-            {musicVideo.map((item) => (
-              <Video
-                key={item.id}
-                src={item.src}
-                poster={item.poster}
-                className="max-w-lg h-[25rem]"
-              />
-            ))}
+    <section className="pt-24">
+      <Container className="flex flex-col justify-center items-center">
+        <SectionTitle text="WORKS" isThin className="text-center mb-24" />
+        <div className="flex flex-col w-11/12 gap-16">
+          <div>
+            <div className="flex justify-between items-center mb-2">
+              {musicVideo.map((item) => (
+                <Link
+                  key={item.id}
+                  to={`/clips/${item.id}`}
+                  className="cursor-pointer hover:-translate-y-1 duration-200"
+                >
+                  <img src={item.poster} alt="Music video poster" />
+                </Link>
+              ))}
+            </div>
+            <MainLink href="/clips" text="// music video" className="w-fit" />
           </div>
-          <MainLink href="/clips" text="// music video" />
-        </div>
-        <div className="mb-16">
-          <div className="flex justify-between items-center mb-2">
-            {advertisingVideo.map((item) => (
-              <Video
-                key={item.id}
-                src={item.src}
-                poster={item.poster}
-                className="max-w-lg h-[25rem]"
-              />
-            ))}
+          <div>
+            <div className="flex justify-between items-center mb-2">
+              {advertisingVideo.map((item) => (
+                <Link
+                  key={item.id}
+                  to={`/clips/${item.id}`}
+                  className="cursor-pointer hover:-translate-y-1 duration-200"
+                >
+                  <img src={item.poster} alt="Advertising video poster" />
+                </Link>
+              ))}
+            </div>
+            <MainLink href="/clips" text="// advertising" className="w-fit" />
           </div>
-          <MainLink href="/clips" text="// advertising" />
-        </div>
-        <div>
-          <div className="flex justify-between items-center mb-2">
-            {tvShowVideo.map((item) => (
-              <Video
-                key={item.id}
-                src={item.src}
-                poster={item.poster}
-                className="max-w-lg h-[25rem]"
-              />
-            ))}
+          <div>
+            <div className="flex justify-between items-center mb-2">
+              {tvShowVideo.map((item) => (
+                <Link
+                  key={item.id}
+                  to={`/clips/${item.id}`}
+                  className="cursor-pointer hover:-translate-y-1 duration-200"
+                >
+                  <img src={item.poster} alt="Tv-show video poster" />
+                </Link>
+              ))}
+            </div>
+            <MainLink href="/clips" text="// tv show" className="w-fit" />
           </div>
-          <MainLink href="/clips" text="// tv show" />
         </div>
       </Container>
     </section>

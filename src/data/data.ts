@@ -42,7 +42,7 @@ export const tvShowVideo = [
 export const contacts = [
   {
     id: 1,
-    text: "Телефоны",
+    text: "Phones",
     image: "/phone.svg",
     value: [
       {
