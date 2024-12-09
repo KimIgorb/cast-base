@@ -8,7 +8,7 @@ export const Home: React.FC = () => {
     <main className="bg-bg">
       <Hero />
       <Works />
-      {/* <Faces /> */}
+      <Faces />
       {/* <Backstage /> */}
     </main>
   );

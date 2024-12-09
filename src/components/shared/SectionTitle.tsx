@@ -15,7 +15,7 @@ const SectionTitle: React.FC<Props> = ({
 }) => {
   return (
     <h2
-      className={`text-secondary font-normal  ${
+      className={`text-secondary font-normal mb-8 md:mb-16 xl:mb-24 ${
         isSmall ? "text-3xl" : "text-5xl md:text-6xl xl:text-7xl"
       } ${className} ${isThin ? "font-mainTitle" : "font-title"}`}
     >

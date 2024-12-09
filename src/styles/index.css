@@ -50,5 +50,5 @@
   @apply 2xl:tracking-widest xl:tracking-widest lg:tracking-widest md:tracking-wider sm:tracking-wider mb:tracking-wide tracking-wide;
   @apply 2xl:text-3xl xl:text-xl lg:text-sm md:text-xs mb:text-[9px] text-[9px];
   @apply 2xl:top-[35rem] xl:top-[33rem] lg:top-[30rem] md:top-[25rem] sm:top-[25rem] mb:top-[17rem] top-[17rem];
-  @apply 2xl:right-[-350px] xl:right-[-300px] lg:right-[-290px] md:right-[-205px] sm:right-[-200px] mb:right-[-120px] right-[-120px];
+  @apply 2xl:right-[-385px] xl:right-[-300px] lg:right-[-290px] md:right-[-205px] sm:right-[-200px] mb:right-[-120px] right-[-120px];
 }
