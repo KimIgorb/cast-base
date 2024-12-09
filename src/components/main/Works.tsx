@@ -10,14 +10,14 @@ const Works: React.FC = () => {
     <section className="pt-24">
       <Container className="flex flex-col justify-center items-center">
         <SectionTitle text="WORKS" isThin className="text-center mb-24" />
-        <div className="flex flex-col w-11/12 gap-16">
+        <div className="flex flex-col 2xl:w-11/12 xl:w-5/6 gap-16">
           <div>
             <div className="flex justify-between items-center mb-2">
               {musicVideo.map((item) => (
                 <Link
                   key={item.id}
                   to={`/clips/${item.id}`}
-                  className="cursor-pointer hover:-translate-y-1 duration-200"
+                  className="cursor-pointer hover:-translate-y-1 duration-200 2xl:max-w-full xl:max-w-[30rem]"
                 >
                   <img src={item.poster} alt="Music video poster" />
                 </Link>

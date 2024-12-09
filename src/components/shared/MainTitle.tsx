@@ -12,6 +12,10 @@ const backgroundImages1 = [
   "/titleBg/image1.jpg",
 ];
 
+const images = [
+  { text: "CAST", backgrounds: backgroundImages },
+  { text: "BASE", backgrounds: backgroundImages1 },
+];
 
 const MainTitle: React.FC = () => {
   const [currentImage, setCurrentImage] = React.useState(0);
@@ -26,24 +30,18 @@ const MainTitle: React.FC = () => {
 
   return (
     <h1>
-      <p
-        className="lg:left-0 lg:top-2 font-title absolute 2xl:left-4 2xl:top-6 z-10 text-[17.625rem] bg-cover bg-clip-text text-transparent leading-[272px]"
-        style={{
-          backgroundImage: `url(${backgroundImages[currentImage]})`,
-          backgroundPosition: "center 30%"
-        }}
-      >
-        CAST
-      </p>
-      <p
-        className="lg:right-52 lg:top-60 leading-[272px] font-title absolute 2xl:top-96 2xl:right-0 z-10 text-[17.625rem] bg-cover bg-clip-text text-transparent"
-        style={{
-          backgroundImage: `url(${backgroundImages1[currentImage]})`,
-          backgroundPosition: "center 30%"
-        }}
-      >
-        BASE
-      </p>
+      {images.map((item, index) => (
+        <p
+          key={index}
+          className={`title ${index === 0 ? "title_cast" : "title_base"}`}
+          style={{
+            backgroundImage: `url(${item.backgrounds[currentImage]})`,
+            backgroundPosition: "center 30%",
+          }}
+        >
+          {item.text}
+        </p>
+      ))}
     </h1>
   );
 };

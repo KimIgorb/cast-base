@@ -12,7 +12,7 @@ const MainLink: React.FC<Props> = ({ text, className, isPrimary, href }) => {
   return (
     <Link
       to={href}
-      className={`flex items-center gap-3  text-3xl font-medium group ${className} ${
+      className={`flex items-center gap-3  2xl:text-3xl xl:text-2xl md:text-xl mb:text-xs text-[10px] w-fit font-medium group ${className} ${
         isPrimary ? " text-primary" : "text-secondary"
       }`}
     >

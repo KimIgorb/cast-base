@@ -3,12 +3,19 @@ export default {
   content: [
     "./index.html",
     "./src/**/*.{js,jsx,ts,tsx}",
+    "./src/styles/**/*.css",
   ],
   theme: {
     letterSpacing: {
-      widest: '1.5rem'
+      widest: '1.5rem',
+      wider: '1rem',
+      wide: '0.5rem'
     },
     extend: {
+      screens: {
+        medium: '876px',
+        mb: '540px'
+      },
       fontFamily: {
         sans: ['Montserrat', 'ui-sans-serif', 'system-ui'],
         contacts: ['Open-Sans', 'ui-sans-serif', 'system-ui'],

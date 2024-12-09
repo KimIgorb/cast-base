@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .swiper-pagination-bullet-active {
-  background: #7A2E2F !important;
+  background: #7a2e2f !important;
   width: 12px !important;
   height: 12px !important;
 }
@@ -13,22 +13,24 @@
   width: fit-content;
 }
 
-/* .swiper-pagination-bullet {
-  width: 10px;
-  height: 10px;
-} */
+.title {
+  @apply 2xl:text-[18.625rem] xl:text-[14rem] lg:text-[12rem] md:text-[9rem] sm:text-[8rem] mb:text-[6rem] text-[4rem];
+  @apply 2xl:leading-[228px] xl:leading-[175px] lg:leading-[160px] md:leading-[140px] sm:leading-[110px] mb:leading-[75px] leading-[50px];
+  @apply font-title absolute z-10 text-transparent bg-cover bg-clip-text;
+}
 
-/* html {
-  scroll-behavior: smooth;
-} */
+.title_cast {
+  @apply 2xl:left-12 2xl:top-14 xl:left-28 xl:top-4 lg:top-0 lg:left-12 medium:left-12 medium:top-0 md:left-0 md:top-0 sm:top-4 sm:left-0 mb:top-0 mb:left-8 left-0 top-0;
+}
 
+.title_base {
+  @apply 2xl:top-96 2xl:right-0 xl:right-32 xl:top-72 lg:right-12 lg:top-72 medium:right-24 medium:top-72 md:right-12 md:top-72 sm:top-56 sm:right-12 mb:top-32 mb:right-8 right-12 top-32;
+}
 
-/* .text-with-bg {
-  background-size: cover;
-  background-position: center;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  display: inline-block;
-  height: 350px;
-  width: auto;
-} */
+.slogan {
+  @apply absolute uppercase z-10 rotate-90 font-bold;
+  @apply 2xl:tracking-widest xl:tracking-widest lg:tracking-widest md:tracking-wider sm:tracking-wider mb:tracking-wide tracking-wide;
+  @apply 2xl:text-3xl xl:text-xl lg:text-sm md:text-xs mb:text-[9px] text-[9px];
+  @apply 2xl:top-[35rem] xl:top-[33rem] lg:top-[30rem] md:top-[25rem] sm:top-[25rem] mb:top-[17rem] top-[17rem];
+  @apply 2xl:right-[-350px] xl:right-[-300px] lg:right-[-290px] md:right-[-205px] sm:right-[-200px] mb:right-[-120px] right-[-100px];
+}
