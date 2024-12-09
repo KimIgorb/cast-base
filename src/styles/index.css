@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@import './header.css';
-
 .swiper-pagination-bullet-active {
   background: #7a2e2f !important;
   width: 12px !important;
