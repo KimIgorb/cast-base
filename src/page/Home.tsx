@@ -9,7 +9,7 @@ export const Home: React.FC = () => {
       <Hero />
       <Works />
       <Faces />
-      {/* <Backstage /> */}
+      <Backstage />
     </main>
   );
 };

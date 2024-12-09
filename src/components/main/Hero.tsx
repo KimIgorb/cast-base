@@ -18,7 +18,7 @@ const Hero: React.FC = () => {
       <Container className="relative">
         <MainTitle />
         <div className="flex 2xl:justify-end xl:justify-center lg:justify-center md:justify-center sm:justify-center mb:justify-center justify-center relative">
-          <div className="flex max-w-[86%] w-full 2xl:justify-between xl:justify-center lg:justify-center md:justify-center sm:justify-center mb:justify-center justify-center items-end">
+          <div className="flex max-w-[86%] w-full xl:justify-center lg:justify-center md:justify-center sm:justify-center mb:justify-center justify-center items-end">
             <div>
               <img
                 className="object-contain 2xl:max-w-[30rem] xl:max-w-80 lg:max-w-80 md:max-w-64 sm:max-w-44 mb:max-w-28 max-w-24 w-full 2xl:mb-36 xl:mb-28 lg:mb-20 md:mb-12 sm:mb-20 mb:mb-8 mb-8"
@@ -27,7 +27,7 @@ const Hero: React.FC = () => {
               />
               <Text
                 text={heroText.about}
-                className="2xl:max-w-2xl xl:max-w-lg lg:max-w-96 md:max-w-80 sm:max-w-64 mb:max-w-36 max-w-28"
+                className="2xl:max-w-lg xl:max-w-lg lg:max-w-96 md:max-w-80 sm:max-w-64 mb:max-w-36 max-w-28"
               />
               <MainLink href="/about" text="full" className="block" isPrimary />
             </div>

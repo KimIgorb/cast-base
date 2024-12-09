@@ -16,7 +16,7 @@ const App: React.FC = () => {
       <ScrollToTop />
       <Header />
       <AppRoutes />
-      {/* <Footer /> */}
+      <Footer />
     </Router>
   );
 };

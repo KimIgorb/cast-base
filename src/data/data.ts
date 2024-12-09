@@ -104,7 +104,6 @@ export const swiperImages = [
   "/gallery-backstage/image2.jpg",
   "/gallery-backstage/image3.jpg",
   "/gallery-backstage/image4.jpg",
-  "/gallery-backstage/image5.jpg",
 ];
 
 // бакстейдж
