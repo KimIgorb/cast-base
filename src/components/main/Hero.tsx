@@ -13,7 +13,7 @@ const heroText = {
 
 const Hero: React.FC = () => {
   return (
-    <section className="relative bg-secondary pt-28 pb-14">
+    <section className="relative bg-secondary pt-20 md:pt-28 pb-14">
       <Slogan />
       <Container className="relative">
         <MainTitle />
