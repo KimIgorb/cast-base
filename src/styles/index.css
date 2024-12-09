@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import './header.css';
+
 .swiper-pagination-bullet-active {
   background: #7a2e2f !important;
   width: 12px !important;
@@ -13,6 +15,24 @@
   width: fit-content;
 }
 
+/* section gap */
+.section-gap {
+  @apply pt-8 lg:pt-16 xl:pt-24;
+}
+
+/* header */
+.nav {
+  @apply  translate-x-full md:translate-x-0 fixed top-0 right-0 flex flex-col w-full h-full bg-bg border-2 border-primary p-10 md:p-0 sm:w-56 md:relative md:bg-transparent md:border-0 md:w-fit;
+}
+.nav.open {
+  @apply translate-x-0
+}
+
+.nav_list {
+  @apply flex flex-col items-center gap-5 flex-1 sm:items-start md:flex-row md:gap-16;
+}
+
+/* hero */
 .title {
   @apply 2xl:text-[18.625rem] xl:text-[14rem] lg:text-[12rem] md:text-[9rem] sm:text-[8rem] mb:text-[6rem] text-[4rem];
   @apply 2xl:leading-[228px] xl:leading-[175px] lg:leading-[160px] md:leading-[140px] sm:leading-[110px] mb:leading-[75px] leading-[50px];

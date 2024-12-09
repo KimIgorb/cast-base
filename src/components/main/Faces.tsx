@@ -4,10 +4,10 @@ import SectionTitle from "../shared/SectionTitle";
 
 const Faces:React.FC = () => {
   return (
-    <section className="pt-24">
+    <section className="section-gap">
       <Container>
         <SectionTitle text="Faces" isThin/>
-        <div className="mt-24 flex gap-16 min-h-[2000px]">
+        <div className="mt-24 flex gap-16 ">
           <div className="flex flex-col gap-14 basis-3/5">
             <div className="flex items-end gap-10">
               <img

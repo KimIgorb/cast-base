@@ -19,8 +19,6 @@ const MainLink: React.FC<Props> = ({ text, className, isPrimary, href }) => {
       {text}
       <svg
         className="transition-transform duration-300 group-hover:translate-x-2 w-4 h-3 md:w-10 md:h-4"
-        width="40"
-        height="15"
         viewBox="0 0 53 19"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
