@@ -14,7 +14,8 @@ export default {
     extend: {
       screens: {
         medium: '876px',
-        mb: '540px'
+        mb: '540px',
+        mini: '440px'
       },
       fontFamily: {
         sans: ['Montserrat', 'ui-sans-serif', 'system-ui'],
