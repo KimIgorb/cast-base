@@ -9,12 +9,10 @@ export const Clips: React.FC = () => {
 
   return (
     <main className="bg-bg">
-      <section className="pt-48">
+      <section className="pt-20 pb-12 md:pb-16 xl:pb-32 md:pt-28 xl:pt-40">
         <Container>
-          <div className="max-w-2xl space-y-6">
-            <SectionTitle text="Our Works" />
-          </div>
-          <div className="py-24 grid gap-6 grid-cols-3">
+          <SectionTitle text="Our Works" className="mb-5 md:mb-10 xl:mb-14 text-center md:text-left" />
+          <div className=" grid gap-3 xl:gap-5 grid-cols-2 md:grid-cols-3">
             {videos.map((item) => (
               <Link
                 key={item.id}

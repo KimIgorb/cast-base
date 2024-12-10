@@ -3,11 +3,6 @@ import { musicVideo, advertisingVideo, tvShowVideo } from "../data/data";
 import { useParams } from "react-router-dom";
 import Video from "../components/shared/Video";
 import Container from "../components/Container";
-import SectionTitle from "../components/shared/SectionTitle";
-import Text from "../components/shared/Text";
-
-const test =
-  "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe quibusdam veritatis ipsum doloremque alias suscipit minima! Unde consequatur autem quaerat delectus aperiam. Beatae dolorum aliquam repudiandae minima aspernatur optio asperiores velit iusto, temporibus dolore quod necessitatibus a, consectetur autem ab";
 
 export const ClipView: React.FC = () => {
   const { id } = useParams();
@@ -26,13 +21,6 @@ export const ClipView: React.FC = () => {
             isView
             className="w-full h-[50rem]"
           />
-          <div>
-            <SectionTitle text="Lorem, ipsum." isThin className="mb-4" />
-            <Text
-              className="text-gray-500 max-w-3xl"
-              text={test}
-            />
-          </div>
         </div>
       </Container>
     </section>
