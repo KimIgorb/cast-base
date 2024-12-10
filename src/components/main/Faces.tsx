@@ -30,9 +30,9 @@ const Faces:React.FC = () => {
               className="object-contain"
             />
             <img
-              src="/faces/image4.png"
+              src="/faces/image4.jpg"
               alt="actorPhoto"
-              className="object-contain"
+              className="object-cover"
             />
           </div>
         </div>

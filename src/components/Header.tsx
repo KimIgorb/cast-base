@@ -70,10 +70,15 @@ const Header: React.FC = () => {
   const logoStyles = isHomeOrClipView ? "text-primary" : "text-secondary";
 
   return (
-    <header className={`fixed top-0 left-0 w-full py-1 md:py-5 xl:py-7 z-50 ${headerStyles}`}>
+    <header
+      className={`fixed top-0 left-0 w-full py-1 md:py-5 xl:py-7 z-50 ${headerStyles}`}
+    >
       <Container>
         <div className="flex justify-between items-center">
-          <Link to="/" className={`font-title text-4xl mx-auto translate-x-5 md:mx-0 md:translate-x-0 ${logoStyles}`}>
+          <Link
+            to="/"
+            className={`font-title text-4xl mx-auto translate-x-5 md:mx-0 md:translate-x-0 ${logoStyles}`}
+          >
             CastBase
           </Link>
           <div ref={navRef}>
@@ -88,8 +93,13 @@ const Header: React.FC = () => {
                 ))}
               </ul>
             </nav>
-            <button className="block md:hidden">
-              <Hamburger toggle={setIsOpen} toggled={isOpen} />
+            <button className="flex md:hidden w-10 h-10 justify-center items-center">
+              <Hamburger
+                toggle={setIsOpen}
+                toggled={isOpen}
+                size={25}
+                distance="sm"
+              />
             </button>
           </div>
         </div>

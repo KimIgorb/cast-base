@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
     <footer className="bg-secondary section-gap pb-8">
       <Container>
         <div className="flex justify-center mini:block mb-5 lg:mb-10">
-          <div className="w-[36%] mini:w-full flex flex-col justify-center items-start mini:flex-row gap-5 mini:gap-0 mini:justify-between">
+          <div className="w-[40%] mini:w-full flex flex-col justify-center items-start mini:flex-row gap-5 mini:gap-0 mini:justify-between">
             {contacts.map((el) => (
               <div
                 className="flex flex-col items-start mini:flex-col mini:justify-normal"
