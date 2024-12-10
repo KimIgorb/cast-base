@@ -9,7 +9,8 @@ export default {
     letterSpacing: {
       widest: '1.5rem',
       wider: '1rem',
-      wide: '0.5rem'
+      wide: '0.5rem',
+      normal: '0rem'
     },
     extend: {
       screens: {

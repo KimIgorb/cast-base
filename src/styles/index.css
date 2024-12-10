@@ -8,6 +8,14 @@
   height: 8px !important;
 }
 
+@media(max-width: 1024px) {
+  .custom-list li::marker {
+    font-size: 0.5rem;
+    line-height: 0.4rem
+  }
+}
+
+
 .swiper-pagination-bullets {
   align-items: center;
   width: fit-content;

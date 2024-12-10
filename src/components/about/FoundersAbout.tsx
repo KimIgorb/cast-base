@@ -8,14 +8,14 @@ const foundersText =
 
 const FoundersAbout: React.FC = () => {
   return (
-    <section className="py-24">
+    <section className="section-gap pb-8 lg:pb-16 xl:pb-24">
       <Container>
-        <div className="flex items-end gap-36">
-          <div className="max-w-[45rem]">
-            <SectionTitle text="About Us." isSmall className="mb-20" />
-            <Text text={foundersText} />
+        <div className="flex flex-col items-end sm:grid sm:grid-cols-2 md:gap-5 lg:gap-6">
+          <div className="sm:flex sm:justify-between sm:flex-col sm:gap-10 lg:gap-14">
+            <SectionTitle text="About Us." isSmall className="mb-3 sm:mb-0" />
+            <Text text={foundersText} className="mb-3"/>
           </div>
-          <img src="/about/founders-img.png" alt="" />
+          <img src="/about/founders-img.png" alt="Photo" className="w-full" />
         </div>
       </Container>
     </section>

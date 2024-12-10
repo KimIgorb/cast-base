@@ -40,7 +40,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
 
-        <h2 className="font-title text-center font-bold text-6xl lg:text-9xl 2xl:text-[150px]">
+        <h2 className="font-title text-center font-bold text-5xl lg:text-9xl 2xl:text-[150px]">
           CastBase
         </h2>
       </Container>
