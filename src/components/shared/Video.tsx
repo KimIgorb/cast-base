@@ -5,9 +5,10 @@ interface Props {
   poster: string;
   className?: string;
   isView?: boolean;
+  classNameView?: string
 }
 
-const Video: React.FC<Props> = ({ src, poster, className, isView }) => {
+const Video: React.FC<Props> = ({ src, poster, className, isView, classNameView }) => {
   const videoRef = React.useRef<HTMLVideoElement>(null);
   const [isPlaying, setIsPlaying] = React.useState(false);
 
@@ -26,7 +27,7 @@ const Video: React.FC<Props> = ({ src, poster, className, isView }) => {
   };
 
   return (
-    <div className={`relative`}>
+    <div className={`relative ${classNameView}`}>
       {isView ? (
         <video
           ref={videoRef}

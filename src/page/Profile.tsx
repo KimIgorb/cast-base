@@ -34,16 +34,16 @@ export const Profile: React.FC = () => {
 
   return (
     <main className="bg-stone-950">
-      <section className="py-24">
+      <section className="py-16">
         <Container className="relative">
           <BackLink to="/faces" />
 
           <SectionTitle
             text={face.name}
-            className="text-white text-9xl mb-3.5"
+            className="text-white mb-3.5"
           />
-          <div className="flex gap-9 mb-64">
-            <div className="space-y-9">
+          <div className="grid grid-cols-2 gap-3 lg:gap-6 mb-10 sm:mb-14 lg:mb-28">
+            <div className="space-y-4 lg:space-y-6">
               <ProfileCard
                 age={face.age}
                 height={face.height}
@@ -59,7 +59,7 @@ export const Profile: React.FC = () => {
                 />
               ))}
             </div>
-            <div className="space-y-9">
+            <div className="space-y-4 lg:space-y-6">
               {rightPhotos.map((photo) => (
                 <img
                   key={photo.id}
@@ -74,7 +74,8 @@ export const Profile: React.FC = () => {
             <Video
               src={face.video}
               poster={face.poster}
-              className="max-w-5xl h-[728px]"
+              className="w-full lg:h-[32.75rem] 2xl:h-[37rem]"
+              classNameView="lg:w-8/12 2xl:w-10/12"
             />
           </div>
         </Container>

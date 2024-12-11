@@ -6,11 +6,11 @@ import { backstageImages, backstageImages2 } from "../data/data";
 export const Backstage: React.FC = () => {
   return (
     <main className="bg-bg">
-      <section className="pt-48 pb-24">
+      <section className="pt-16 sm:pt-24 md:pt-32 lg:pt-40 xl:pt-48 pb-8 lg:pb-16 xl:pb-24">
         <Container>
           <div className="flex gap-12">
             <BackstageGallery arr={backstageImages} />
-            <BackstageGallery arr={backstageImages2} className="pt-32"/>
+            <BackstageGallery arr={backstageImages2} className="pt-32" />
           </div>
         </Container>
       </section>

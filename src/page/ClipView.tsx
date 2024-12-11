@@ -10,16 +10,17 @@ export const ClipView: React.FC = () => {
   const allVideos = [...musicVideo, ...advertisingVideo, ...tvShowVideo];
 
   const currentVideo = allVideos.find((item) => item.id === Number(id));
-
+ 
   return (
-    <section className="py-32 bg-black">
+    <section className="pt-24 md:pt-32 lg:pt-40 pb-8 md:pb-14 bg-black">
       <Container>
-        <div>
+        <div className="flex items-center justify-center">
           <Video
             src={currentVideo!.src}
             poster={currentVideo!.poster}
             isView
-            className="w-full h-[50rem]"
+            className="w-full h-56 mini:h-80 sm:h-96 md:h-[28rem] lg:h-[36rem] xl:h-[40rem]"
+            classNameView="flex items-center justify-center w-full md:w-4/5 xl:full"
           />
         </div>
       </Container>

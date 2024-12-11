@@ -9,8 +9,7 @@ const BackLink: React.FC<Props> = ({ to }) => {
   return (
     <Link to={to}>
       <svg
-        className="absolute top-[-2rem]"
-        width="54"
+        className="absolute top-[-2rem] w-10 lg:w-14"
         height="19"
         viewBox="0 0 54 19"
         fill="none"

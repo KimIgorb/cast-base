@@ -11,8 +11,8 @@ const ArtistCard: React.FC<Props> = ({ name, src, id }) => {
   return (
     <li className="relative">
       <Link to={`/faces/${id}`}>
-        <img src={src} alt="Photo" />
-        <span className="font-title text-secondary text-2xl absolute bottom-2.5 left-3">{name}</span>
+        <img src={src} alt="Photo" className="w-full"/>
+        <span className="font-title text-secondary text-md lg:text-2xl absolute bottom-2.5 left-1">{name}</span>
       </Link>
     </li>
   );
