@@ -7,8 +7,8 @@ export const musicVideo = [
   },
   {
     id: 2,
-    src: "/videos/Beeline_UZB.mp4",
-    poster: "/posters/music-video2.png",
+    src: "/videos/SUMBLIMATION-LIGHT-MASTER.mp4",
+    poster: "/posters/advertising2.png",
   },
 ];
 
@@ -20,8 +20,8 @@ export const advertisingVideo = [
   },
   {
     id: 4,
-    src: "/videos/SUMBLIMATION-LIGHT-MASTER.mp4",
-    poster: "/posters/advertising2.png",
+    src: "/videos/Beeline_UZB.mp4",
+    poster: "/posters/music-video2.png",
   },
 ];
 
