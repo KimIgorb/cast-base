@@ -1,19 +1,37 @@
 import React from "react";
 import Container from "../Container";
 import MainLink from "../shared/MainLink";
+import Text from "../shared/Text";
+import MainTitle from "../shared/MainTitle";
 import Slogan from "../shared/Slogan";
+
+const heroText = {
+  about:
+    "CAST BASE это кастинг‑агентство с более чем 100 проектами, 1000+ актерами и профессиональным сервисом для ваших проектов.",
+  subtitle: "Casting agency from Uzbekistan",
+};
 
 const Hero: React.FC = () => {
   return (
-    <section className="relative bg-secondary pt-16">
-      <MainLink text="full" href="/about" isPrimary className="bottom-1 left-[11%] lg:left-[17.5%] absolute z-10" />
-      <div>
-        <div className="relative  flex justify-center items-center">
-          <h1 className="flex justify-center items-center w-full lg:w-5/6 xl:w-full">
-            <img src="/hero1.png" alt="" className="xl:h-screen object-contain" />
-          </h1>
+    <section className="relative bg-secondary pt-20 md:pt-24 pb-4">
+      {/* <Slogan /> */}
+      <Container className="relative">
+        {/* <MainTitle /> */}
+        <div>
+          <div>
+            <img src="/actors/hero-img2.png" alt="ActorPhoto2" />
+            <Text text={heroText.about} />
+            <MainLink href="/about" text="full" className="block" isPrimary />
+          </div>
+          <div>
+            <div>
+              <img src="/actors/hero-img1.png" alt="ActorPhoto1" />
+              <Text text={heroText.subtitle} />
+            </div>
+            <img src="/actors/hero-img3.png" alt="ActorPhoto3" />
+          </div>
         </div>
-      </div>
+      </Container>
 
     </section>
   );
