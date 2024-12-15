@@ -2,7 +2,7 @@ import Container from "../Container";
 
 const HeroAbout = () => {
   return (
-    <section className="pt-16 sm:pt-16 md:pt-16 2xl:pt-4">
+    <section className="pt-16 sm:pt-16 md:pt-20 2xl:pt-4">
       <Container>
         <div className="relative flex justify-center items-center">
           <h1 className="flex justify-center items-center w-full">
