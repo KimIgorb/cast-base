@@ -13,22 +13,30 @@ const heroText = {
 
 const Hero: React.FC = () => {
   return (
-    <section className="relative bg-secondary pt-20 md:pt-24 pb-4">
-      {/* <Slogan /> */}
-      <Container className="relative">
-        {/* <MainTitle /> */}
-        <div>
-          <div>
-            <img src="/actors/hero-img2.png" alt="ActorPhoto2" />
-            <Text text={heroText.about} />
-            <MainLink href="/about" text="full" className="block" isPrimary />
+    <section className="bg-secondary pt-16 pb-4">
+
+      <Container>
+        <div className="flex justify-between relative">
+          <div className="self-end">
+            <img
+              className="max-w-32"
+              src="/actors/hero-img2.png"
+              alt="ActorPhoto" />
+            <Text text={heroText.about} className="max-w-36"/>
+            <MainLink text="full" href="/about" isPrimary/>
           </div>
           <div>
-            <div>
-              <img src="/actors/hero-img1.png" alt="ActorPhoto1" />
+            <div className="flex items-end">
+              <img
+                className="max-w-32"
+                src="/actors/hero-img1.png"
+                alt="ActorPhoto" />
               <Text text={heroText.subtitle} />
             </div>
-            <img src="/actors/hero-img3.png" alt="ActorPhoto3" />
+            <img
+              className="max-w-32"
+              src="/actors/hero-img3.png"
+              alt="ActorPhoto" />
           </div>
         </div>
       </Container>

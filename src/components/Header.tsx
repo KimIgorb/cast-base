@@ -77,7 +77,7 @@ const Header: React.FC = () => {
         <div className="flex justify-between items-center">
           <Link
             to="/"
-            className={`font-title text-[25px] md:text-4xl ${logoStyles}`}
+            className={`font-title text-[16px] md:text-4xl ${logoStyles}`}
           >
             CastBase
           </Link>
