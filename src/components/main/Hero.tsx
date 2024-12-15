@@ -16,7 +16,7 @@ const Hero: React.FC = () => {
     <section className="bg-secondary pt-16 pb-4">
 
       <Container>
-        <div className="flex justify-between relative">
+        <div className="flex justify-center relative">
           <MainTitle/>
           <div className="self-end">
             <img
