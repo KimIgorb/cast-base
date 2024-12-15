@@ -17,24 +17,25 @@ const Hero: React.FC = () => {
 
       <Container>
         <div className="flex justify-between relative">
+          <MainTitle/>
           <div className="self-end">
             <img
-              className="max-w-32"
+              className="max-w-24 mb-2"
               src="/actors/hero-img2.png"
               alt="ActorPhoto" />
-            <Text text={heroText.about} className="max-w-36"/>
+            <Text text={heroText.about} className="max-w-32"/>
             <MainLink text="full" href="/about" isPrimary/>
           </div>
-          <div>
+          <div className="flex flex-col gap-16">
             <div className="flex items-end">
               <img
-                className="max-w-32"
+                className="max-w-16"
                 src="/actors/hero-img1.png"
                 alt="ActorPhoto" />
-              <Text text={heroText.subtitle} />
+              <Text text={heroText.subtitle} className="max-w-12"/>
             </div>
             <img
-              className="max-w-32"
+              className="max-w-20 self-center"
               src="/actors/hero-img3.png"
               alt="ActorPhoto" />
           </div>
