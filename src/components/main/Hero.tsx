@@ -5,10 +5,12 @@ import Slogan from "../shared/Slogan";
 
 const Hero: React.FC = () => {
   return (
-    <section className="relative bg-secondary pt-16 pb-5 ">
+    <section className="relative bg-secondary pt-16 pb-5">
       <Container>
-        <div className="relative">
-          <img src="/hero.png" alt=""  className="h-auto"/>
+        <div className="relative  flex justify-center items-center">
+          <h1 className="flex justify-center items-center w-full lg:w-5/6 xl:w-full">
+            <img src="/hero.png" alt="" className="xl:h-screen object-contain"/>
+          </h1>
         </div>
       </Container>
     </section>
