@@ -6,7 +6,7 @@ interface Props {
 }
 
 const Text: React.FC<Props> = ({ text, className }) => {
-  return <p className={`2xl:text-3xl xl:text-2xl lg:text-xl md:text-xl sm:text-sm mb:text-[8px] text-[8px] ${className}`}>{text}</p>;
+  return <p className={`2xl:text-3xl xl:text-2xl lg:text-xl md:text-xl sm:text-sm mb:text-[8px] text-[6px] ${className}`}>{text}</p>;
 };
 
 export default Text;

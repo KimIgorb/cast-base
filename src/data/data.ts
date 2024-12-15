@@ -89,16 +89,6 @@ export const aboutInfo = [
   "fashion shooting;",
 ];
 
-// слайдер
-// export const swiperImages = [
-//   "/backstage/image1.png",
-//   "/backstage/image2.png",
-//   "/backstage/image3.png",
-//   "/backstage/image4.png",
-//   "/backstage/image5.png",
-//   "/backstage/image6.png",
-// ];
-
 export const swiperImages = [
   "/gallery-backstage/image1.jpg",
   "/gallery-backstage/image2.jpg",

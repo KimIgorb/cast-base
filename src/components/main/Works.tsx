@@ -11,7 +11,7 @@ const Works: React.FC = () => {
         <SectionTitle
           text="WORKS"
           isThin
-          className="text-center mb-8 md:mb-16 xl:mb-24"
+          className="text-center mb-4 md:mb-16 xl:mb-24"
         />
         <div className="flex flex-col w-full mini:w-4/5 gap-4 lg:gap-8 xl:gap-12">
           <Clips

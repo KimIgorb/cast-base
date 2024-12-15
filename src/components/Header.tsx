@@ -71,13 +71,13 @@ const Header: React.FC = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full py-1 md:py-5 xl:py-7 z-50 ${headerStyles}`}
+      className={`fixed top-0 left-0 w-full py-1 md:py-3 xl:py-4 z-50 ${headerStyles}`}
     >
       <Container>
         <div className="flex justify-between items-center">
           <Link
             to="/"
-            className={`font-title text-4xl mx-auto translate-x-5 md:mx-0 md:translate-x-0 ${logoStyles}`}
+            className={`font-title text-[25px] md:text-4xl ${logoStyles}`}
           >
             CastBase
           </Link>

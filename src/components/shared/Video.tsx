@@ -33,10 +33,11 @@ const Video: React.FC<Props> = ({ src, poster, className, isView, classNameView 
           ref={videoRef}
           controls
           poster={poster}
-          src={src}
           preload="auto"
           className={`object-cover ${className}`}
-        />
+        >
+          <source src={src} type="video/mp4"/>
+        </video>
       ) : (
         <>
           <video
