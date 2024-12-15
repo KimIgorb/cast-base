@@ -9,7 +9,7 @@ const Hero: React.FC = () => {
       <Container>
         <div className="relative  flex justify-center items-center">
           <h1 className="flex justify-center items-center w-full lg:w-5/6 xl:w-full">
-            <img src="/hero.png" alt="" className="xl:h-screen object-contain"/>
+            <img src="/hero1.png" alt="" className="xl:h-screen object-contain"/>
           </h1>
         </div>
       </Container>
