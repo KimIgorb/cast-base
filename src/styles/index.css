@@ -41,7 +41,7 @@
 /* hero */
 .title {
   @apply font-title absolute z-10 text-primary;
-  @apply text-7xl leading-[0.7];
+  @apply text-6xl leading-[0.7];
 }
 
 .title_cast {
@@ -54,7 +54,7 @@
     sm:top-4 sm:left-0 
     mb:top-0 mb:left-8 
     mini:left-12 
-    left-0 top-0;
+    left-4 top-0;
 }
 
 .title_base {
@@ -67,7 +67,7 @@
     sm:top-56 sm:right-12 
     mb:top-32 mb:right-8 
     mini:right-20 
-    right-0 top-20;
+    right-3 top-[5.2rem];
 }
 
 .slogan {
