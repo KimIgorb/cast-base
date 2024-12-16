@@ -13,7 +13,7 @@ const heroText = {
 
 const Hero: React.FC = () => {
   return (
-    <section className="relative bg-secondary pt-[70px] md:pt-24 xl:pt-36 pb-10">
+    <section className="relative bg-secondary pt-[70px] md:pt-24 xl:pt-40 xl:pb-14 pb-10">
       <Slogan />
       <Container>
         <div className="flex justify-center">
