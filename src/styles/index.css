@@ -70,3 +70,12 @@
   @apply xl:top-[26rem] md:top-[25rem] sm:top-[19rem] mini:top-[14rem] top-[12rem];
   @apply 2xl:right-[-240px] xl:right-[-260px] lg:right-[-222px] md:right-[-216px] sm:right-[-187px] mini:right-[-120px] right-[-110px];
 }
+
+
+@font-face {
+  font-family: 'SFFlorencesansSCBlack';
+  src: url('./fonts/SFFlorencesansSCBlack.woff2') format('woff2'),
+       url('./fonts/SFFlorencesansSCBlack.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
