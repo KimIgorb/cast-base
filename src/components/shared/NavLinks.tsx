@@ -9,7 +9,7 @@ interface Props {
 const NavLinks: React.FC<Props> = ({ value, href }) => {
   return (
     <li className="hover:-translate-y-1 duration-200">
-      <Link to={href} className="text-lg font-semibold outline-none">
+      <Link to={href} className="text-lg font-semibold outline-none text-primary">
         {value}
       </Link>
     </li>

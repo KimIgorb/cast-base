@@ -13,12 +13,11 @@ const heroText = {
 
 const Hero: React.FC = () => {
   return (
-    <section className="relative bg-secondary pt-[70px] md:pt-24 xl:pt-28 2xl:pt-32 pb-10">
+    <section className="relative bg-secondary pt-[70px] md:pt-24 xl:pt-36 pb-10">
       <Slogan />
       <Container>
-
         <div className="flex justify-center">
-          <div className="flex gap-5 mini:gap-14 md:gap-0 justify-center lg:justify-evenly items-end lg:w-full">
+          <div className="flex gap-5 mini:gap-14 md:gap-0 justify-center lg:justify-evenly 2xl:justify-end items-end lg:w-full">
             <div className="relative">
               <p className="title title_cast">CAST</p>
               <img
@@ -32,7 +31,7 @@ const Hero: React.FC = () => {
               />
               <MainLink href="/about" text="full" className="block" isPrimary />
             </div>
-            <div className="relative flex flex-col  xl:gap-24 sm:gap-20 mini:gap-12 gap-8 items-center">
+            <div className="relative flex flex-col xl:gap-24 sm:gap-20 mini:gap-12 gap-8 items-center">
               <p className="title title_base">BASE</p>
               <div className="flex items-end lg:items-center">
                 <img

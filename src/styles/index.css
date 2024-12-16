@@ -41,11 +41,12 @@
 /* hero */
 .title {
   @apply font-title absolute z-10 text-primary;
-  @apply text-[67px] mini:text-8xl sm:text-9xl md:text-[10rem] lg:text-[14rem] xl:text-[16rem] leading-none;
+  @apply text-[67px] mini:text-8xl sm:text-9xl md:text-[10rem] lg:text-[14rem] xl:text-[16rem] 2xl:text-[18rem] leading-none;
 }
 
 .title_cast {
-  @apply xl:left-[-96px] xl:top-[-192px]
+  @apply 2xl:left-[-240px] 2xl:top-[-217px]
+    xl:left-[-96px] xl:top-[-192px]
     lg:left-[-127px] lg:top-[-165px]
     md:left-[-33px] md:top-[-129px]
     sm:left-[-47px] sm:top-[-100px]
@@ -63,9 +64,9 @@
 }
 
 .slogan {
-  @apply absolute uppercase z-10 rotate-90 font-bold;
-  @apply  xl:tracking-wider md:tracking-wider sm:tracking-wider mb:tracking-wide tracking-wide;
+  @apply absolute uppercase z-10 rotate-90 font-bold text-primary;
+  @apply xl:tracking-wider md:tracking-wider sm:tracking-wider mb:tracking-wide tracking-wide;
   @apply xl:text-xl lg:text-sm md:text-[12px] mini:text-[9px] text-[7px];
   @apply xl:top-[26rem] md:top-[25rem] sm:top-[19rem] mini:top-[14rem] top-[12rem];
-  @apply xl:right-[-260px] lg:right-[-222px] md:right-[-216px] sm:right-[-187px] mini:right-[-120px] right-[-110px];
+  @apply 2xl:right-[-240px] xl:right-[-260px] lg:right-[-222px] md:right-[-216px] sm:right-[-187px] mini:right-[-120px] right-[-110px];
 }
