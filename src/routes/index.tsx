@@ -2,7 +2,7 @@ import {
   Home,
   About,
   Backstage,
-  Clips,
+  ClipsPage,
   Faces,
   Profile,
   ClipView,
@@ -12,7 +12,7 @@ import { RouteObject } from "react-router-dom";
 const routes: RouteObject[] = [
   { path: "/", element: <Home /> },
   { path: "/about", element: <About /> },
-  { path: "/clips", element: <Clips /> },
+  { path: "/clips", element: <ClipsPage /> },
   { path: "/clips/:id", element: <ClipView /> },
   { path: "/backstage", element: <Backstage /> },
   { path: "/faces", element: <Faces /> },

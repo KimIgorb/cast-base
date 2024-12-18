@@ -15,7 +15,7 @@ const FoundersAbout: React.FC = () => {
             <SectionTitle text="About Us." isSmall className="mb-3 sm:mb-0" />
             <Text text={foundersText} className="mb-3"/>
           </div>
-          <img src="/about/founders-img.png" alt="Photo" className="w-full" />
+          <img src="/about/founders-img.jpg" alt="Photo" className="w-full" />
         </div>
       </Container>
     </section>

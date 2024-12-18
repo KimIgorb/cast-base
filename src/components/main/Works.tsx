@@ -13,24 +13,33 @@ const Works: React.FC = () => {
           isThin
           className="text-center mb-4 md:mb-16 xl:mb-24"
         />
-        <div className="flex flex-col w-full mini:w-11/12 gap-4 lg:gap-8 xl:gap-12">
+        <div className="flex flex-col w-full gap-4 lg:gap-8 xl:gap-12">
           <Clips
             arrToUse={musicVideo}
             alt="Music video poster"
             href="/clips"
             linkText="// music video"
+            className="grid grid-cols-1 md:grid-cols-2 gap-2"
+            imageStyle="h-72 sm:h-[370px]"
+            isMainPage
           />
           <Clips
             arrToUse={advertisingVideo}
             alt="Advertising video poster"
             href="/clips"
             linkText="// advertising"
+            className="grid grid-cols-1 md:grid-cols-2 gap-2"
+            imageStyle="h-72 sm:h-[370px]"
+            isMainPage
           />
           <Clips
             arrToUse={tvShowVideo}
             alt="Tv-show video poster"
             href="/clips"
             linkText="// tv show"
+            className="grid grid-cols-1 md:grid-cols-2 gap-2"
+            imageStyle="h-72 sm:h-[370px]"
+            isMainPage
           />
         </div>
       </Container>

@@ -11,6 +11,7 @@ const SwiperBackstage: React.FC = () => {
   return (
     <>
       <Swiper
+        className="w-11/12 h-96 sm:h-[470px] md:h-[650px] lg:h-[700px]"
         modules={[Pagination, Navigation]}
         slidesPerView={1}
         spaceBetween={50}
@@ -29,7 +30,7 @@ const SwiperBackstage: React.FC = () => {
             <img
               src={image}
               alt="Backstage Photo"
-              className="object-cover"
+              className="object-cover w-full h-full"
             />
           </SwiperSlide>
         ))}

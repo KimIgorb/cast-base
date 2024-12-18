@@ -12,7 +12,7 @@ const Backstage: React.FC = () => {
           <SectionTitle text="Backstage" isThin />
           <MainLink href="/backstage" text="full" />
         </div>
-        <div>
+        <div className="">
           <SwiperBackstage />
         </div>
       </Container>

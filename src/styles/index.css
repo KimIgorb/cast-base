@@ -45,7 +45,7 @@
 }
 
 .title_cast {
-  @apply 2xl:left-[-240px] 2xl:top-[-217px]
+  @apply 2xl:left-[-170px] 2xl:top-[-217px]
     xl:left-[-96px] xl:top-[-192px]
     lg:left-[-127px] lg:top-[-165px]
     md:left-[-33px] md:top-[-129px]

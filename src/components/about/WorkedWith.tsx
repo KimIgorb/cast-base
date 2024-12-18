@@ -4,10 +4,8 @@ import SectionTitle from "../shared/SectionTitle";
 import Text from "../shared/Text";
 
 const workedInfo =
-  "R&Co, BMW, Hyundai, Activ, Sprite, Beeline, Avito, OLX, Toyota, OPPO, Samsung, Nestle, Visit Almaty, Danone, Carlsberg, Home Credit Bank, Jusan Bank, Kaspi.kz, Kolesa, Yandex Go, Apollo, Flint, Snatch, Хрусteam, Kazakhtelecom, Tinkoff, Tele2, LG, KIA, Rexona, Old Spice, Krysha, Arbuz, Supradin and many others.";
+  "Tinkoff, Beeline, Merinda, Pepsi, Yandex, TBC bank , Xруcteam, HONOR , Avito, Ishonch, Casademont, Adrenaline , Fasten, NBU bank, Alif , Aviasales, Uzum , Avo, Lactel, Payme , NRG , Sabertea , Clik and many others .";
 
-// flex items-end gap-12
-//max-w-[45rem]
 const WorkedWith: React.FC = () => {
   return (
     <section className="section-gap">
@@ -24,7 +22,7 @@ const WorkedWith: React.FC = () => {
               isSmall
               className="mb-2 sm:mb-0"
             />
-            <Text text={workedInfo} className="md:text-sm"/>
+            <Text text={workedInfo} className="md:text-sm" />
           </div>
         </div>
       </Container>

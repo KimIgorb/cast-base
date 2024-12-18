@@ -7,7 +7,7 @@ interface Props {
 
 const BackstageGallery: React.FC<Props> = ({ arr, className }) => {
   return (
-    <div className={`flex flex-col gap-12 ${className}`}>
+    <div className={`flex flex-col gap-2 ${className}`}>
       {arr.map((image) => (
         <div key={image.id}>
           <img src={image.src} alt="Photo" />
