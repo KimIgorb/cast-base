@@ -29,15 +29,14 @@ const Video: React.FC<Props> = ({ src, poster, className, isView, classNameView 
   return (
     <div className={`relative ${classNameView}`}>
       {isView ? (
-        <video
-          ref={videoRef}
-          controls
-          src={src}
-          poster={poster}
-          preload="auto"
-          className={`object-cover ${className}`}
+        <iframe
+          className={className}
+          src="https://www.youtube.com/embed/IzC7ynGhPxs?si=66p9XOD9bQW6gzOO"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
         >
-        </video>
+        </iframe>
       ) : (
         <>
           <video

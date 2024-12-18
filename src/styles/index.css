@@ -55,12 +55,12 @@
 }
 
 .title_base {
-  @apply xl:right-[-30px] xl:top-[176px] 
-    lg:right-[-48px] lg:top-[192px] 
+  @apply xl:right-[-30px] xl:top-[220px] 
+    lg:right-[-48px] lg:top-[145px] 
     md:right-[-9px] md:top-[200px]
-    sm:right-[-10px] sm:bottom-[159px] 
-    mini:right-[-6px] mini:bottom-[100px]
-    right-0 bottom-[90px];
+    sm:right-[-10px] sm:top-[147px] 
+    mini:right-[-6px] mini:top-[100px]
+    right-0 top-[92px];
 }
 
 .slogan {

@@ -28,7 +28,7 @@ const HeroFaces: React.FC = () => {
           isSmall
           className="max-w-2xl xl:max-w-4xl space-y-6 mb-5 md:mb-10"
         />
-        <ul className="grid grid-cols-3 gap-1 md:gap-4 lg:gap-14 xl:gap-56">
+        <ul className="grid grid-cols-3 gap-1 md:gap-4 lg:gap-14 xl:gap-20">
           {nationality.map((item) => (
             <li key={item.id} className="text-center">
               <SectionTitle text={item.value} isSmall className="mb-1 lg:mb-2" />

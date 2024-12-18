@@ -21,7 +21,7 @@ const Hero: React.FC = () => {
             <div className="relative">
               <p className="title title_cast">CAST</p>
               <img
-                className="object-contain lg:max-w-64 md:max-w-60 sm:max-w-40 mini:max-w-28 max-w-24 mb-4"
+                className="object-contain xl:max-w-80 md:max-w-60 sm:max-w-40 mini:max-w-28 max-w-24 mb-4"
                 src="/actors/hero-img2.png"
                 alt="ActorPhoto2"
               />
@@ -31,11 +31,11 @@ const Hero: React.FC = () => {
               />
               <MainLink href="/about" text="full" className="block" isPrimary />
             </div>
-            <div className="relative flex flex-col xl:gap-24 sm:gap-20 mini:gap-12 gap-8 items-center">
+            <div className="relative flex flex-col sm:gap-20 mini:gap-12 gap-8 items-center">
               <p className="title title_base">BASE</p>
               <div className="flex items-end lg:items-center">
                 <img
-                  className="object-contain  lg:max-w-52 md:max-w-44 sm:max-w-32 mini:max-w-24 max-w-20"
+                  className="object-contain  xl:max-w-72 md:max-w-44 sm:max-w-32 mini:max-w-24 max-w-20"
                   src="/actors/hero-img1.png"
                   alt="ActorPhoto1"
                 />
@@ -45,7 +45,7 @@ const Hero: React.FC = () => {
                 />
               </div>
               <img
-                className="object-contain  lg:max-w-60 md:max-w-60 sm:max-w-40 mini:max-w-28 max-w-24"
+                className="object-contain  xl:max-w-72 md:max-w-60 sm:max-w-40 mini:max-w-28 max-w-24"
                 src="/actors/hero-img3.png"
                 alt="ActorPhoto3"
               />

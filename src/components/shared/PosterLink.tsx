@@ -1,7 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import MainLink from "./MainLink";
-import Text from "./Text";
 
 interface Props {
   arrToUse: { id: number; src: string; poster: string, title: string }[];
@@ -14,20 +13,27 @@ interface Props {
   isMainPage?: boolean
 }
 
-const Clips: React.FC<Props> = ({ arrToUse, alt, href, linkText, className, imageStyle, isClipPage, isMainPage }) => {
+const PosterLink: React.FC<Props> = ({ arrToUse, alt, href, linkText, className, imageStyle, isClipPage, isMainPage }) => {
+
+  const navigate = useNavigate();
+
+  const handleNavigation = (id: number, item: { id: number; src: string; poster: string; title: string }) => {
+    navigate(`/clips/${id}`, { state: { clip: item } });
+  };
+
   return (
     <div>
       <div className={className}>
         {arrToUse.map((item) => (
-          <Link
+          <div
             key={item.id}
-            to={`/clips/${item.id}`}
+            onClick={() => handleNavigation(item.id, item)}
             className="cursor-pointer hover:-translate-y-1 duration-200 max-w-full"
           >
             <img src={item.poster} alt={alt} className={`object-cover w-full ${imageStyle}`} />
             {isClipPage && <p className="text-primary text-sm font-semibold lg:text-base">{item.title}</p>}
 
-          </Link>
+          </div>
         ))}
       </div>
       {isMainPage && <MainLink href={href!} text={linkText!} className="w-fit" />}
@@ -36,4 +42,4 @@ const Clips: React.FC<Props> = ({ arrToUse, alt, href, linkText, className, imag
   );
 };
 
-export default Clips;
+export default PosterLink;
