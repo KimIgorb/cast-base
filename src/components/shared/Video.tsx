@@ -31,7 +31,7 @@ const Video: React.FC<Props> = ({ src, poster, className, isView, classNameView 
       {isView ? (
         <iframe
           className={className}
-          src="https://www.youtube.com/embed/IzC7ynGhPxs?si=66p9XOD9bQW6gzOO"
+          src={src}
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowFullScreen

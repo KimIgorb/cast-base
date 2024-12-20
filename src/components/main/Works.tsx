@@ -11,7 +11,7 @@ const Works: React.FC = () => {
         <SectionTitle
           text="WORKS"
           isThin
-          className="text-center mb-4 md:mb-16 xl:mb-24"
+          className="text-center mb-4 md:mb-8"
         />
         <div className="flex flex-col w-full gap-4 lg:gap-8 xl:gap-12">
           <PosterLink

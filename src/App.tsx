@@ -6,7 +6,7 @@ import React from "react";
 import ScrollToTop from "./hooks/ScrollToTop";
 
 const App: React.FC = () => {
-  function AppRoutes() {
+  function AppRoutes()  {
     const routing = useRoutes(routes);
     return routing;
   }

@@ -3,7 +3,9 @@ import { Squash as Hamburger } from "hamburger-react";
 import Container from "./Container";
 import { Link, useLocation } from "react-router-dom";
 import NavLinks from "./shared/NavLinks";
-import throttle from "lodash.throttle";
+import useHandleScroll from "../hooks/useHandleScroll";
+import useClickOutside from "../hooks/useClickOutside";
+
 
 const navLinks = [
   { id: 1, value: "About", href: "/about" },
@@ -13,53 +15,27 @@ const navLinks = [
 ];
 
 const Header: React.FC = () => {
-  const [isScrolled, setIsScrolled] = React.useState(false);
+ 
   const [isOpen, setIsOpen] = React.useState(false);
   const navRef = React.useRef<HTMLDivElement>(null);
   const location = useLocation();
 
-  const handleScroll = throttle(() => {
-    setIsScrolled(window.scrollY > 0);
-  }, 100);
-
-  React.useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
-  const handleClickOutside = (event: MouseEvent) => {
-    if (navRef.current && !navRef.current.contains(event.target as Node)) {
-      setIsOpen(false);
-    }
-  };
-
-  React.useEffect(() => {
-    if (isOpen) {
-      document.addEventListener("mousedown", handleClickOutside);
-    } else {
-      document.removeEventListener("mousedown", handleClickOutside);
-    }
-
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, [isOpen]);
+  const isScrolled = useHandleScroll(0, 100);
+  useClickOutside(navRef, () => setIsOpen(false), isOpen);
+ 
 
   React.useEffect(() => {
     setIsOpen(false);
   }, [location]);
 
-  const isProfilePage = /^\/faces\/\d+$/.test(location.pathname);
-  const isClipViewPage = /^\/clips\/\d+$/.test(location.pathname);
+  const routeChecks = {
+    isProfilePage: /^\/faces\/\d+$/.test(location.pathname),
+    isClipViewPage: /^\/clips\/\d+$/.test(location.pathname),
+  };
 
-  if (isProfilePage) {
-    return null;
-  }
+  const isHomeOrClipView = location.pathname === "/" || routeChecks.isClipViewPage;
 
-  const isHomeOrClipView = location.pathname === "/" || isClipViewPage;
+  if (routeChecks.isProfilePage) return null;
 
   const headerStyles = `${
     isScrolled

@@ -6,7 +6,7 @@ const Faces: React.FC = () => {
   return (
     <section className="section-gap">
       <Container>
-        <SectionTitle text="Faces" isThin className="mb-4 md:mb-16 xl:mb-24" />
+        <SectionTitle text="Faces" isThin className="mb-4 md:mb-8" />
         <div className="grid grid-cols-2 gap-4 sm:gap-8 lg:gap-12">
 
           <div className="col-span-1">

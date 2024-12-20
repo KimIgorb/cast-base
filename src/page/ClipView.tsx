@@ -8,14 +8,14 @@ export const ClipView: React.FC = () => {
   const clip = location.state?.clip;
 
   return (
-    <section className="pt-24 md:pt-32 lg:pt-40 pb-8 md:pb-14 bg-black">
+    <section className="pt-28 md:pt-32 lg:pt-40 pb-28 bg-black">
       <Container>
-        <div className="flex items-center justify-center">
+        <div className="flex items-center justify-center ">
           <Video
             src={clip!.src}
             poster={clip!.poster}
-            className='w-full h-56 mini:h-80 sm:h-96 md:h-[28rem] lg:h-[36rem] xl:h-[40rem]'
-            classNameView="flex items-center justify-center w-full md:w-4/5 xl:w-full"
+            className='w-full h-full'
+            classNameView="flex items-center justify-center w-full xl:w-full h-80 mini:h-[30rem] lg:h-[36rem] xl:h-[40rem]"
             isView
           />
         </div>

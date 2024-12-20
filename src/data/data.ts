@@ -47,7 +47,7 @@ export const tvShowVideo = [
 export const videos = [
   { id: 17, src: "", poster: "/posters/sublimation-dark.png", title: 'Sublimation art project'},
   { id: 18, src: "", poster: "/posters/sublimation-light.png", title: 'Sublimation art project'},
-  { id: 7, src: "", poster: "/posters/7tea.png", title: "7Tea" },
+  { id: 7, src: "https://www.youtube.com/embed/IzC7ynGhPxs?si=66p9XOD9bQW6gzOO", poster: "/posters/7tea.png", title: "7Tea" },
   { id: 8, src: "", poster: "/posters/casademont.png", title: "Casademont" },
   { id: 9, src: "", poster: "/posters/click.png", title: "Click manifest" },
   { id: 10, src: "", poster: "/posters/ishonch.png", title: "Ishonch" },
@@ -60,7 +60,7 @@ export const videos = [
   { id: 19, src: "", poster: 'posters/reels2.png', title: 'Commercial reels for Adrenaline'},
   { id: 20, src: "", poster: 'posters/reels1.png', title: 'Commercial reels for Adrenaline'},
   { id: 21, src: "", poster: 'posters/reels3.png', title: 'Commercial reels for Adrenaline'},
-  { id: 22, src: "", poster: "/posters/payme.png" , title: 'Payme'},
+  { id: 22, src: "https://www.youtube.com/embed/QWxtchqestI?si=Bhguz1lYJNsyp79i", poster: "/posters/payme.png" , title: 'Payme'},
   { id: 23, src: "", poster: "/posters/payme2.png", title: 'Payme' },
   { id: 24, src: "", poster: "/posters/uzum8.png", title: 'Uzum market. 8th of March' },
   { id: 25, src: "", poster: "/posters/uzum.png" , title: 'Uzum market. Back to school'},

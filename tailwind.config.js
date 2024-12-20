@@ -22,7 +22,7 @@ export default {
         sans: ['Montserrat', 'ui-sans-serif', 'system-ui'],
         contacts: ['Open-Sans', 'ui-sans-serif', 'system-ui'],
         title: ['SFFlorencesansSCBlack', 'ui-sans-serif', 'system-ui'],
-        titleAbout: ['Florencesans SC', 'ui-sans-serif', 'system-ui'],
+        titleAbout: ['FlorencesansSC', 'ui-sans-serif', 'system-ui'],
         mainTitle: ['Microsoft Yi Baiti', 'ui-sans-serif', 'system-ui']
       },
       colors: {

@@ -65,10 +65,10 @@
 
 .slogan {
   @apply absolute uppercase z-10 rotate-90 font-bold text-primary;
-  @apply xl:tracking-wider md:tracking-wider sm:tracking-wider mb:tracking-wide tracking-wide;
+  @apply xl:tracking-widest md:tracking-wider sm:tracking-wider mb:tracking-wide tracking-wide;
   @apply xl:text-xl lg:text-sm md:text-[12px] mini:text-[9px] text-[7px];
-  @apply xl:top-[26rem] md:top-[25rem] sm:top-[19rem] mini:top-[14rem] top-[12rem];
-  @apply 2xl:right-[-240px] xl:right-[-260px] lg:right-[-222px] md:right-[-216px] sm:right-[-187px] mini:right-[-120px] right-[-110px];
+  @apply xl:top-[34rem] md:top-[25rem] sm:top-[19rem] mini:top-[14rem] top-[12rem];
+  @apply xl:right-[-330px] lg:right-[-222px] md:right-[-216px] sm:right-[-187px] mini:right-[-120px] right-[-110px];
 }
 
 
@@ -79,3 +79,12 @@
   font-weight: 900;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'FlorencesansSC';
+  src: url('./fonts/FlorencesansSC.woff2') format('woff2'),
+       url('./fonts/FlorencesansSC.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
