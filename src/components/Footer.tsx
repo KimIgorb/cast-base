@@ -6,14 +6,14 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-secondary section-gap pb-8">
       <Container>
-        <div className="flex justify-center mini:block mb-5 lg:mb-10">
-          <div className="w-[40%] mini:w-full flex flex-col justify-center items-start mini:flex-row gap-5 mini:gap-0 mini:justify-between">
+        <div className="flex justify-center md:mb-10">
+          <div className="grid grid-cols-2 gap-y-3 mini:gap-x-10 md:grid-cols-4 md:gap-x-20">
             {contacts.map((el) => (
               <div
-                className="flex flex-col items-start mini:flex-col mini:justify-normal"
+                className="flex flex-col gap-1"
                 key={el.id}
               >
-                <div className="flex gap-1 items-center">
+                <div className="flex items-center gap-1">
                   <img
                     src={el.image}
                     alt={el.alt}
@@ -39,7 +39,6 @@ const Footer: React.FC = () => {
             ))}
           </div>
         </div>
-
         <h2 className="font-title text-center font-bold text-5xl lg:text-9xl 2xl:text-[150px] hidden md:block">
           CastBase
         </h2>
