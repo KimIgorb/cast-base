@@ -4,7 +4,7 @@ import SectionTitle from "../shared/SectionTitle";
 import Text from "../shared/Text";
 
 const workedInfo =
-  "Tinkoff, Beeline, Merinda, Pepsi, Yandex, TBC bank , Xруcteam, HONOR , Avito, Ishonch, Casademont, Adrenaline , Fasten, NBU bank, Alif , Aviasales, Uzum , Avo, Lactel, Payme , NRG , Sabertea , Clik and many others .";
+  "Tinkoff, Beeline, Mirinda, Pepsi, Yandex, TBC bank , Xруcteam, HONOR , Avito, Ishonch, Casademont, Adrenaline , Fasten, NBU bank, Alif , Aviasales, Uzum , Avo, Lactel, Payme , NRG , Sabertea , Clik and many others .";
 
 const WorkedWith: React.FC = () => {
   return (
