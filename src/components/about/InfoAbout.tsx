@@ -27,11 +27,13 @@ const InfoAbout = () => {
             src="/about/info-img1.png"
             alt="Photo"
             className="object-contain"
+            loading="lazy"
           />
           <img
             src="/about/info-img2.png"
             alt="Photo"
             className="object-contain"
+            loading="lazy"
           />
         </div>
       </Container>

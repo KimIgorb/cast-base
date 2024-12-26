@@ -15,6 +15,7 @@ const WorkedWith: React.FC = () => {
             src="/about/worked-img1.png"
             className="order-2 sm:order-1 xl:col-span-4"
             alt="Photo"
+            loading="lazy"
           />
           <div className="h-full order-1 sm:order-2 sm:flex sm:flex-col sm:gap-5 xl:justify-between xl:col-span-6">
             <SectionTitle

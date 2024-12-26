@@ -6,7 +6,7 @@ const HeroAbout = () => {
       <Container>
         <div className="relative flex justify-center items-center">
           <h1 className="flex justify-center items-center">
-            <img src="/about.png" alt="Your idea our faces" className="object-contain lg:h-[80vh]" />
+            <img src="/about.png" alt="Your idea our faces" className="object-contain lg:h-[80vh]" loading="lazy"/>
           </h1>
         </div>
       </Container>

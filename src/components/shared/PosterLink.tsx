@@ -30,7 +30,7 @@ const PosterLink: React.FC<Props> = ({ arrToUse, alt, href, linkText, className,
             onClick={() => handleNavigation(item.id, item)}
             className="cursor-pointer hover:-translate-y-1 duration-200 max-w-full"
           >
-            <img src={item.poster} alt={alt} className={`object-cover w-full ${imageStyle}`} />
+            <img src={item.poster} alt={alt} className={`object-cover w-full ${imageStyle}`} loading="lazy"/>
             {isClipPage && <p className="text-primary text-sm font-semibold lg:text-base">{item.title}</p>}
 
           </div>
