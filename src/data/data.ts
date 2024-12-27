@@ -45,7 +45,7 @@ export const tvShowVideo = [
 ];
 
 export const videos = [
-  { id: 7, src: "", poster: "/posters/sublimation-dark.png", title: 'Sublimation art project'},
+  { id: 7, src: "https://www.youtube.com/embed/s806wF_yoXU?si=IhbmItcowu3cPFbv", poster: "/posters/sublimation-dark.png", title: 'Sublimation art project'},
   { id: 8, src: "https://www.youtube.com/embed/7PQdsRHRnw4?si=olwhojjsRiOxKx8W", poster: "/posters/sublimation-light.png", title: 'Sublimation art project'},
   { id: 9, src: "https://www.youtube.com/embed/IzC7ynGhPxs?si=66p9XOD9bQW6gzOO", poster: "/posters/7tea.png", title: "7Tea" },
   { id: 10, src: "https://www.youtube.com/embed/YxtDDTh4h_U?si=rt-zBgGw7khVOGta", poster: "/posters/casademont.png", title: "Casademont" },
@@ -57,16 +57,17 @@ export const videos = [
   { id: 16, src: "https://www.youtube.com/embed/CoWYPb-EaX0?si=gc_sq5jOJudsazOJ", poster: "/posters/sag.png", title: "SAG" },
   { id: 17, src: "https://www.youtube.com/embed/kgeGLIrD32Y?si=oSZB9Q_fH_RMhE6l", poster: "/posters/tivortin.png", title: "Tivortin" },
   { id: 18, src: "https://www.youtube.com/embed/xAw_-TNyeMI?si=lMu6JQHcPxQNGtGn", poster: "/posters/ostin.png", title: "Ostin" },
-  { id: 19, src: "", poster: "/posters/yandex.png", title: "Yandex Eats"},
+  { id: 19, src: "https://www.youtube.com/embed/Xj8VrUHWRnk?si=N_YCmdk2LEwnAivw", poster: "/posters/yandex.png", title: "Yandex Eats"},
   { id: 20, src: "https://www.youtube.com/embed/o2XK_gupyFE", poster: 'posters/reels2.png', title: 'Commercial reels for Adrenaline'},
   { id: 21, src: "https://www.youtube.com/embed/RjNKcooEAsQ", poster: 'posters/reels1.png', title: 'Commercial reels for Adrenaline'},
   { id: 22, src: "https://www.youtube.com/embed/3uH0AO2G5sU", poster: 'posters/reels3.png', title: 'Commercial reels for Adrenaline'},
   { id: 23, src: "https://www.youtube.com/embed/QWxtchqestI?si=Bhguz1lYJNsyp79i", poster: "/posters/payme.png" , title: 'Payme'},
   { id: 24, src: "https://www.youtube.com/embed/pcM5B-BxSdU?si=oiRI72nDG3wyKUcQ", poster: "/posters/payme2.png", title: 'Payme' },
   { id: 25, src: "https://www.youtube.com/embed/yd1GgGHQUbE?si=O_d7A20b1-5NcFJp", poster: "/posters/uzum8.png", title: 'Uzum market. 8th of March' },
-  { id: 26, src: "", poster: "/posters/uzum.png" , title: 'Uzum market. Back to school'},
-  { id: 27, src: "", poster: "/posters/uzum2.png", title: 'Uzum market. Birthday'},
-  { id: 28, src: "", poster: "/posters/uzum3.png", title: 'Uzum market.'},
+  { id: 26, src: "https://www.youtube.com/embed/5GAYYqCF8WI?si=uFKgJOlMxS9dBV6F", poster: "/posters/uzum.png" , title: 'Uzum market. Back to school'},
+  { id: 27, src: "https://www.youtube.com/embed/V-CW1LTFPic?si=AXTmeI26M5uGFraF", poster: "/posters/uzum2.png", title: 'Uzum market. Birthday'},
+  { id: 28, src: "https://www.youtube.com/embed/uUP6WzHgSM4?si=jmP03Lz3Freh3ufD", poster: "/posters/uzum3.png", title: 'Uzum market.'},
+  { id: 29, src: "https://www.youtube.com/embed/1g4lkjQwYvo?si=wDeCVuIebw_gmp5D", poster: "/posters/uzum4.png", title: 'Uzum market.'},
 
 ];
 

@@ -27,9 +27,14 @@ const Hero: React.FC = () => {
               />
               <Text
                 text={heroText.about}
-                className="2xl:max-w-xl xl:max-w-lg lg:max-w-96 md:max-w-96 sm:max-w-64 mini:max-w-40 max-w-32"
+                className="2xl:max-w-xl xl:max-w-lg lg:max-w-96 md:max-w-96 sm:max-w-64 mini:max-w-40 max-w-32 sm:mb-3"
               />
-              <MainLink href="/about" text="full" className="block" isPrimary />
+              <MainLink
+                href="https://docs.google.com/forms/d/e/1FAIpQLSeK76v2byJzU3z9dsKQnXBMy7NLpn1w4-KHeG5j4xuioXfmhw/viewform?pli=1"
+                text='Cвязаться с нами'
+                isPrimary
+                isExternal
+              />
             </div>
             <div className="relative flex flex-col sm:gap-20 mini:gap-12 gap-8 items-center">
               <p className="title title_base">BASE</p>
