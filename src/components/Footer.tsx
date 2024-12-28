@@ -28,7 +28,7 @@ const Footer: React.FC = () => {
                     <a
                       key={item.id}
                       href={item.href}
-                      className="font-contacts block font-semibold text-sm lg:text-base xl:text-xl leading-7 relative group w-fit"
+                      className="font-contacts block font-semibold text-[11px] mini:text-sm lg:text-base xl:text-xl leading-7 relative group w-fit"
                     >
                       {item.text}
                       <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all duration-500 group-hover:w-full" />
